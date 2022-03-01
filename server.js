@@ -41,6 +41,6 @@ res.status(200).send(req.body)
 )
 
 
-app.listen(3001,function(){
+app.listen(process.env.PORT||3001,function(){
     console.log("app is listening on port 3001")
 } )
